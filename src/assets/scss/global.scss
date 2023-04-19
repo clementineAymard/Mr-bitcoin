@@ -1,0 +1,42 @@
+// Externals
+
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/modals";
+@import "basics/animations";
+
+// Views
+@import "views/home-page";
+@import "views/contact-page";
+@import "views/contact-edit";
+@import "views/contact-details";
+
+// Components
+@import "cmps/app-header";
+@import "cmps/contact-preview";
+@import "cmps/contact-list";
+@import "cmps/contact-filter";
+@import "cmps/move-preview";
+@import "cmps/move-list";
+@import "cmps/signup";
+
+
+
+
+.main-app {
+    @include basic-layout;
+    
+    .main-section {
+        @include basic-layout;
+        margin-block: 1rem;
+
+    }
+}

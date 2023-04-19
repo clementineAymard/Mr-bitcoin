@@ -1,0 +1,32 @@
+.contact-edit {
+    >form>label>input {
+        flex-grow: 1;
+    }
+
+    .btn-save {
+        width: fit-content;
+        background-color: green;
+        color: whitesmoke;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        align-self: end;
+    }
+
+    >button {
+        border: none;
+        border-radius: 10px;
+        background-color: red;
+        padding: 5px;
+        position: fixed;
+        top: 4rem;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >img {
+            height: 1.5rem;
+        }
+    }
+}

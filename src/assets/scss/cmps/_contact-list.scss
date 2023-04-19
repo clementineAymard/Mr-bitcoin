@@ -1,0 +1,18 @@
+.contact-list {
+    // grid-auto-rows: minmax(200px, auto);
+    // @include basic-layout;
+    
+    gap: 1rem;
+    position: relative;
+
+    .btn-home {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 50px;
+        border: solid 1px $clr5;
+        background-color: $clr1;
+        color: $clr5;
+         
+    }
+}

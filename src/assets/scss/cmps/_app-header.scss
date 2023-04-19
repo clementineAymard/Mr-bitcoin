@@ -1,0 +1,65 @@
+.main-app .app-header {
+    @include basic-layout;
+    background-color: $clr6;
+    color: white;
+
+    .logo {
+        font-family: eurofurence;
+        font-size: 1.3rem;
+    }
+
+    .user-details img {
+        height: 1.5rem;
+    }
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: rem(5px);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        >.header-nav {
+            display: flex;
+            gap: 2rem;
+
+            @include for-mobile-layout {
+                gap: 1rem;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    button{
+        border: none;
+        border-radius: 25px;
+        color: darkblue;
+        font-size: rem(12px);
+        padding: 5px;
+    }
+
+    a {
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: rem(10px);
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        transition: ease-in-out 0.3s background-color, ease-in-out 0.3s color;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &:hover {
+            background-color: $clr5;
+            color: $clr4;
+        }
+    }
+}
